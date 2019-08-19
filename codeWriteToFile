@@ -4,8 +4,8 @@
 def main():
     sentence = getText()
     fileName = getFileName()
-    file = open(fileName, "w")
-    file.write(story)
+    file = open(fileName, "w+")
+    file.write(sentence)
     file.close()
     print ("File Written Successfully!!!")
     return
