@@ -1,0 +1,24 @@
+#The is function definition for accepting a file name and text/sentence from user,
+# create the file and insert/save the sentence into the file created
+
+def main():
+    sentence = getText()
+    fileName = getFileName()
+    file = open(fileName, "w")
+    file.write(story)
+    file.close()
+    print ("File Written Successfully!!!")
+    return
+
+#Here takes in the string or message called sentence into the file
+def getText():
+    sentence = str (input (" Enter a text or a sentence: ? "))
+    return sentence
+
+#function that receive the file name from the user
+def getFileName ():
+    fileName = " "
+    fileName = input ("Enter the name of your file with its extension, <filename.txt>: ? ")
+    return fileName
+
+main()
